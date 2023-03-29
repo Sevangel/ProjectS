@@ -1,0 +1,78 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/main.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Sriracha&display=swap" rel="stylesheet">
+    <title>UwU</title>
+</head>
+<body>
+    <header>
+        <div class="navigation">
+            <ul class="menu">
+                <li><a href="#Home" class="scrollLink">Home</a></li>
+                <li><a href="#AboutMe" class="scrollLink">About me</a></li>
+                <li><a href="#Projects" class="scrollLink">Projects</a></li>
+                <li><a href="#Contact" class="scrollLink">Contact</a></li>
+                <li><a href="#Genshin" class="scrollLink">Genshin Impact</a></li>
+            </ul>
+        </div>
+        <section id="Home" class="rain">
+            <div class="textZone">
+                <h1>Bienvenue OwO</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus enim facilis id neque consectetur doloribus nam iure consequuntur a in tenetur, tempore exercitationem voluptates officiis rem rerum repellendus dolore. Doloremque!
+                </p>
+                <div class="ctaButton"><a href="#AboutMe" class="cta scrollLink">DECOUVRIR</a></div>
+            </div>
+        </section>
+    </header>
+    <div class="container">
+        <section id="AboutMe">
+            <article>
+                <div class="textZone">
+                    <h2>Séverine Bourin</h2>
+                </div>
+                <a href="#Projects" class="scrollLink"><img src="Assets/SevPluie.png" alt="MeDrawing" class="sevPluieImg"></a>
+            </article>
+        </section>
+        <section id="Projects">
+            <div class="textZone">
+                <h2>Projects</h2>
+                <article>
+                
+                </article>
+                <article>
+    
+                </article>
+            </div>
+        </section>
+        <section id="Contact">
+            <div class="textZone">
+                <h2>Contact</h2>
+            </div>
+        </section>
+        <section id="Genshin">
+            <div class="textZone">
+                <h2>Games</h2>
+            </div>
+        </section>
+    </div>
+    <footer>
+
+    </footer>
+    <script>
+        $(document).ready(function() {
+            $("a.scrollLink").click(function(event) {
+                event.preventDefault();
+                $("html, body").animate({
+                    scrollTop: $($(this).attr("href")).offset().top
+                  }, 500);
+              });
+          });
+      </script>
+</body>
+</html>
